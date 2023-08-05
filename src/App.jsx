@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './Header'
-import Homepage from './Homepage'
-import Footer from './Footer'
+import Header from './components/Header/Header'
+
 
 function App() {
   
@@ -10,8 +9,6 @@ function App() {
   return (
     <div>
       <Header />
-      <Homepage />
-      <Footer />
     </div>
   )
 }
