@@ -9,7 +9,7 @@ function App() {
   
 
   return (
-    <div>
+    <div class="app-container">
       <Header />
       <Homepage />
       <Footer />

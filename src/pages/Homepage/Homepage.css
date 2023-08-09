@@ -1,3 +1,21 @@
 .homepage-container{
     min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #FAFAFA;
+}
+
+.categories-container{
+    display: flex;
+    margin: 30px 50px -40px 80px;
+}
+
+.categories-container a{
+    color: #5264C3;
+    font-size: 20px;
 }

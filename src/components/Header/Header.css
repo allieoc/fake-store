@@ -12,6 +12,7 @@
     height: 50px;
     width: 100%;
     padding: 20px 40px;
+    background-color: #FAFAFA;
 }
 
 .header-container p:nth-child(1){
