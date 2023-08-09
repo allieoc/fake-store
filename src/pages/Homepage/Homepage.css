@@ -8,11 +8,13 @@
     flex-wrap: wrap;
     padding: 50px;
     background-color: #FAFAFA;
+    justify-content: center;
 }
 
 .categories-container{
     display: flex;
-    margin: 30px 50px -40px 80px;
+    justify-content: center;
+    margin: 30px 0px -50px 0px;
 }
 
 .categories-container a{

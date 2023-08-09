@@ -32,7 +32,7 @@ function Homepage() {
   return (
     <div className="homepage-container">
         <div className="categories-container">
-            <a href="#">All</a>
+            <a href="#">Categories Placeholder</a>
         </div>
         <div className="products-container">
             {
