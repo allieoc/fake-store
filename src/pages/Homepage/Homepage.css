@@ -9,15 +9,6 @@
     padding: 50px;
     background-color: #FAFAFA;
     justify-content: center;
+    text-transform: capitalize;
 }
 
-.categories-container{
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px -50px 0px;
-}
-
-.categories-container a{
-    color: #5264C3;
-    font-size: 20px;
-}

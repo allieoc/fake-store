@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './Homepage.css';
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard/ProductCard';
+import Categories from '../../components/Categories/Categories';
 
 function Homepage() {
     //create state to hold products
@@ -17,7 +18,7 @@ function Homepage() {
             //make api call to get products
             axios.get("https://fakestoreapi.com/products")
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 //store product data in state
                 setProducts(res.data)
             })
@@ -31,15 +32,14 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-        <div className="categories-container">
-            <a href="#">Categories Placeholder</a>
-        </div>
+        <Categories />
         <div className="products-container">
             {
                 products.map(item=><ProductCard product ={item}
                     key={item.id} />)
             }    
         </div>
+        
     </div>
   )
 }
