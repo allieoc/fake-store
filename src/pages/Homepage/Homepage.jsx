@@ -32,7 +32,7 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-        <Categories />
+        <Categories setProducts={setProducts} />
         <div className="products-container">
             {
                 products.map(item=><ProductCard product ={item}

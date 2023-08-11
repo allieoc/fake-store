@@ -1,13 +1,25 @@
-.categories-container button {
-    border: none;
-    background-color: #FAFAFA;
+.categories-container p {
     color: #3A4895;
     font-size: 20px;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .categories-container{
     display: flex;
     justify-content: space-evenly;
     margin: 30px 0px -50px 0px;
+}
+
+@media (max-width: 650px) {
+    .categories-container{
+        width: 80%;
+        margin: 10px auto -40px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categories-container p{
+        padding: 5px 10px;
+    }
 }

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import "./Categories.css"
 import axios from 'axios';
 
-function Categories() {
+function Categories({setProducts}) {
     //first we need to map out the categories
     //use state to hold categories
     const [categories, setCategories] = useState([])
@@ -28,13 +28,43 @@ function Categories() {
         }, [] 
     )
 
+    //function to change endpoint based on which category is clicked
+    //this function needs to show the data for a specific category
+    const handleClick = (category) => {
+        // console.log(category)
+        //make api call to get products that match clicked category
+        axios.get(`https://fakestoreapi.com/products/category/${category}`)
+            //at end of url i need to add the category that gets clicked
+            //the category that gets clicked needs to be stored in a state ??
+            //how do i store it ??
+        .then(res => {
+            console.log(res.data) //this is the right data
+            //what do i do with this data?
+            //i want to see THESE products on homepage
+            setProducts(res.data) //is this right?
+        })
+        .catch(err => {console.log(err)})
 
+    }
+
+    //this function needs to show all products when All is clicked
+    const showAll = () => {
+        //you need to make API call to get all products
+        axios.get("https://fakestoreapi.com/products")
+            .then(res => {
+                // console.log(res.data)
+                //store product data in state
+                setProducts(res.data)
+            })
+            .catch(err => console.log(err))
+    }
 
   return (
     <div className="categories-container">
-        <button>All</button>
+        <p onClick={showAll}>All</p>
         {
-            categories.map(item=> <button>{item}</button>)
+            categories.map(item=><p onClick={() => handleClick(item)}>{item}</p>)
+            //how do i display the data i have in the clickedCategory state?
         } 
     </div>
   )
