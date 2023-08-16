@@ -11,10 +11,10 @@ function ProductCard({product}) {
             <img src={product.image} />
         </div>
         
-        <p className="product-title">{product.title}</p>
+        <a href={`/details/${product.id}`}>{product.title}</a>
         <p className="product-category">{product.category}</p>
         <br></br>
-        <p className="product-title">{product.price}€</p>
+        <p className="product-price">{product.price}€</p>
     </div>
   )
 }

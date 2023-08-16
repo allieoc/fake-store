@@ -1,0 +1,43 @@
+.details-page{
+    height: 100vh;
+    
+}
+
+.product-container{
+    background-color: #FFF;
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+
+}
+
+.product-container img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.product-info{
+    margin-left: 100px;
+    width: 50%;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+h3, p{
+    padding-bottom: 10px;
+}
+
+.product-info button{
+    background-color: #FFD814;
+    font-weight: 700;
+    width: 160px;
+    padding: 10px 0px;
+    border: none;
+    color: #000;
+}
+

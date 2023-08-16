@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <div className="header-container">
-      <p>Fake Store</p>
+      <a href="/">Fake Store</a>
       <p>1</p>
       <BsCart3 className="cart-icon"/>
     </div>

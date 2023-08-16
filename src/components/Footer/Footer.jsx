@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="footer-container">
         <p>Made with <AiFillHeart /> by mimo</p>
-        <a href="#">Contact Us</a>
+        <a href="/contact">Contact Us</a>
     </div>
   )
 }

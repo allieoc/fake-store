@@ -23,9 +23,11 @@ img{
     margin: 15px 0px;
 }
 
-.product-title{
+.product-card a, .product-price{
     font-weight: 700;
     margin: 0px 15px;
+    color: #000;
+    text-decoration: none;
 }
 
 .product-category{
