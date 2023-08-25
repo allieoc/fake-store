@@ -32,7 +32,7 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-        <Categories setProducts={setProducts} />
+        <Categories setProducts={setProducts} key={products.id}/>
         <div className="products-container">
             {
                 products.map(item=><ProductCard product ={item}

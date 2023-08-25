@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import Categories from './components/Categories/Categories'
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import Contact from './pages/Contact/Contact';
+import CartContextProvider from './contexts/CartContext';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="app-container">
       <BrowserRouter>
+      <CartContextProvider>
       <Header />
 
       <Routes>
@@ -24,6 +26,7 @@ function App() {
       </Routes>
       
       <Footer />
+      </CartContextProvider>
       </BrowserRouter>
     </div>
   )
