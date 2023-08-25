@@ -1,0 +1,18 @@
+.checkout-container{
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto 0px auto;
+    background-color: #FFF;
+    width: 80%;
+    height: 80%;
+    padding: 40px 0px;
+}
+
+.checkout-titles{
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    margin: 0px 30px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #979797;
+}

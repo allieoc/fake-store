@@ -35,7 +35,7 @@ function Homepage() {
         <Categories setProducts={setProducts} key={products.id}/>
         <div className="products-container">
             {
-                products.map(item=><ProductCard product ={item}
+                products.map(item=><ProductCard product={item}
                     key={item.id} />)
             }    
         </div>

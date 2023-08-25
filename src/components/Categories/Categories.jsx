@@ -17,7 +17,7 @@ function Categories({setProducts}) {
             //make api call to get categories
             axios.get('https://fakestoreapi.com/products/categories')
             .then(res => {
-                console.log(res.data)
+                //console.log(res.data)
                 //I have the category data, where do I store it?
                 //store it in state
                 setCategories(res.data)

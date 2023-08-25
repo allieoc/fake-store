@@ -16,13 +16,13 @@
     position: relative;
 }
 
-.header-container a{
+.logo{
     color: #3A4895;
     font-size: 24px;
     font-weight: 700;
 }
 
-.header-container p{
+.cart-number{
     color: white;
     font-size: 12px;
     background-color: red;
