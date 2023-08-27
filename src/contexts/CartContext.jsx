@@ -6,34 +6,34 @@ export const CartContext = createContext()
 
 export default function CartContextProvider(props){
 
-    //create my global state to hold favorite characters
+    //create my global state to hold cart items
     const [cart, setCart] = useState([])
 
 
-    /*
+ 
     //set up useEffect to run when component loads to check local storage
     useEffect(
     ()=>{
         //get the value from localStorage
-        const storedFavorites = localStorage.getItem('favoritesList')
+        const storedProducts = localStorage.getItem('productList')
 
         //check if something was there
-        if (storedFavorites){
+        if (storedProducts){
             //use this value for the state
-            setFavorites(JSON.parse(storedFavorites))
+            setCart(JSON.parse(storedProducts))
         }
     }, []
     )
     
 
-    //save favorites anytime it changes
+    //save cart anytime it changes
     useEffect(
         () => {
             //store the value in localStorage
-            localStorage.setItem('favoritesList', JSON.stringify(favorites))
-        }, [favorites] //runs whenever the state changes
+            localStorage.setItem('productList', JSON.stringify(cart))
+        }, [cart] //runs whenever the state changes
     )
-    */
+
   
 
     //create a function to add a character to state
@@ -62,7 +62,7 @@ export default function CartContextProvider(props){
 
     //anything we need global access to needs to be added to value
     return(
-        <CartContext.Provider value={{addProduct, cart, removeProduct}} >
+        <CartContext.Provider value={{addProduct, cart, removeProduct, setCart}} >
             {props.children}
         </CartContext.Provider>
     )

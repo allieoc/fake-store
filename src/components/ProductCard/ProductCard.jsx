@@ -41,7 +41,7 @@ function ProductCard({product}) {
         <Link to={`/details/${product.id}`}>{product.title}</Link>
         <p className="product-category">{product.category}</p>
         <br></br>
-        <p className="product-price">{product.price}€</p>
+        <p className="product-price">${product.price}</p>
     </div>
   )
 }

@@ -13,9 +13,9 @@ function CartItem({product}) {
             <p>{product.title}</p>
         </div>
         <div className="cart-item-data">
-            <p>{product.price}€</p>
+            <p>${product.price}</p>
             <p>1</p>
-            <BsTrash onClick={()=>removeProduct(product.id)}/>
+            <BsTrash className="trash" onClick={()=>removeProduct(product.id)}/>
         </div>
     </div>
   )
