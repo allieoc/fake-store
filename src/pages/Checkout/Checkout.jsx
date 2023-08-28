@@ -68,6 +68,16 @@ function Checkout() {
       navigate('/')
     }
 
+
+    const handleCheckoutClick = () =>{
+      if (cart.length > 0){
+        setIsOpen(true)
+      } else {
+        alert('Please add items to your cart')
+      }
+    }
+
+
   return (
     <div className="checkout-container">
       <div className="checkout-titles">
@@ -86,7 +96,7 @@ function Checkout() {
       </div>
       <div className="checkout-total">
         <h3>Total $<span className="checkout-price">{totalPrice}</span></h3>
-        <button onClick={()=>setIsOpen(true)}>Checkout</button>
+        <button onClick={handleCheckoutClick}>Checkout</button>
 
         <Modal
         isOpen={isOpen}

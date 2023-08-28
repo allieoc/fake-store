@@ -9,7 +9,7 @@ function Header() {
   
   return (
     <div className="header-container">
-      <Link to="/" className="logo">Fake Store</Link>
+      <Link to="/" className="logo">Allie's Fake Store</Link>
       <Link to="/checkout" className="cart-number">{cart.length}</Link>
       <Link to="/checkout">
       <BsCart3 className="cart-icon"/>

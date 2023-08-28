@@ -9,6 +9,8 @@ function ProductCard({product}) {
   //NOTE {} not ()
   const {addProduct, cart, removeProduct} = useContext(CartContext)
 
+
+  
   //start with a variable to test UI
   //const isInCart = false;
   //change to state
